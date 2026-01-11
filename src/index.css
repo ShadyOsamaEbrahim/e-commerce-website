@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+@theme {
+  /* burgundy */
+  --color-mainColor: #780000;
+  /* baby blue */
+  --color-secondMainColor: #669bbc;    
+  /* white */
+  --color-backgroundColor: #ffffff;
+  /* dark blue */
+  --color-textColor: #003049;
+  /* beige */
+  --color-cardColor:#fdf0d5;
+  
+  --container-padding: 1rem;
+  --container-padding-sm: 3rem;
+   --bg-main: #ffffff;
+  --text-main: #0f172a;
+}
+  @dark {
+      --bg-main: #0b1120;
+      --text-main: #e5e7eb;
+    }
+
+
+
+@layer utilities {
+  .container-custom {
+    margin-left: auto;
+    margin-right: auto;       
+    max-width: 1024px;       
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+
+  @media (min-width: 640px) {  
+    .container-custom {
+      padding-left: var(--container-padding-sm);
+      padding-right: var(--container-padding-sm);
+    }
+  }
+}
+
