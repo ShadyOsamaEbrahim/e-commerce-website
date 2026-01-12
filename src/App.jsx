@@ -24,6 +24,7 @@ const App = () => {
     <SearchProvider>
 
 <CartProvider>
+  
     <div className='bg-white dark:bg-gray-950 dark:text-white min-h-screen '>
       <Navbar />
       <div className='sm:pt-12 '>

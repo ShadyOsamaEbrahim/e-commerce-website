@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDom.createRoot(document.getElementById('root')).render(
   
-  <BrowserRouter>
+  <BrowserRouter basename="/e-commerce-website" >
     <App />
   </BrowserRouter>
   
